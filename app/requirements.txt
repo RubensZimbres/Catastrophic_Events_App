@@ -1,0 +1,19 @@
+streamlit==1.41.1
+python-dotenv==1.0.0
+requests>=2.31.0
+pandas>=2.0.0
+
+# Vertex AI / Gemini client.
+# Was pinned to 0.6.0, a pre-1.0 preview that predates the Gemini 3 model
+# family entirely -- it cannot serve the model this app is configured for.
+# 1.0 is also where types.Part.from_text() became keyword-only.
+google-genai>=1.0
+
+# LangChain agent orchestration
+langchain>=0.3
+langchain-core>=0.3
+langchain-google-genai==2.0.9
+pydantic==2.9.2
+
+google-cloud-secret-manager>=2.20.0
+google-auth>=2.23.0
