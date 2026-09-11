@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.benchmarks/
+venv/
+.venv/
+
+# Local config: created from app/.env.example
+.env
+**/.env
+!**/.env.example
+
+# Service-account keys
+*-key.json
+service-account*.json
