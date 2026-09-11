@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+# 8 README screenshots, ~MBs, with no role at runtime
+pics/
+# Source for a React component that is not built or served by this image
+frontend/
