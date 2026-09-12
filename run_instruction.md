@@ -100,13 +100,13 @@ The Dockerfile's build context is the **`app/` directory**, where it lives:
 
 ```bash
 cd app
-docker build -t xtreme-weather .
+docker build -t catastrophic-weather .
 docker run --rm -p 8080:8080 \
   -e GCP_PROJECT_ID=your-numeric-id \
   -e GCP_PROJECT_NAME=your-project \
   -e GOOGLE_APPLICATION_CREDENTIALS=/creds/sa.json \
   -v /path/to/service-account.json:/creds/sa.json:ro \
-  xtreme-weather
+  catastrophic-weather
 ```
 
 The image runs as a non-root `appuser` and healthchecks `/_stcore/health`.
